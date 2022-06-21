@@ -51,9 +51,13 @@ You can view the project through the links below:
 ## 📝 License
 
 ---
-```
+<br>
+  <p align="center">
   🔧🚧project in progress🔧🚧
-```
+  </p>
+<br>
+
+
 ---
 
 This project is licensed under the MIT License. See the [LICENSE](https://opensource.org/licenses/MIT) file for details.
