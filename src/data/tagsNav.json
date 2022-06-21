@@ -1,0 +1,18 @@
+[
+  {
+    "id": 0,
+    "tag":"Home"
+  },
+  {
+    "id": 1,
+    "tag":"Destination"
+  },
+  {
+    "id": 2,
+    "tag":"Crew"
+  },
+  {
+    "id": 3,
+    "tag":"Technology"
+  }
+]
