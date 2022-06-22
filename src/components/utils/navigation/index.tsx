@@ -1,6 +1,7 @@
 import React from "react"
-import { Link, Outlet } from "react-router-dom"
+import { Link } from "react-router-dom"
 import  * as S  from "./styled"
+import navItems from "../../../data/tagsNav.json"
 
 const NavMain:React.FC = () => {
 
@@ -8,10 +9,15 @@ const NavMain:React.FC = () => {
   return (
     <>
     <S.Nav>
-        <Link to="/">Home</Link>
-        <Link to="destination">Destination</Link>
-        <Link to="crow">Crow</Link>
-        <Link to="technology">Technology</Link>
+      <S.Ul>
+        {
+          navItems.map(({id,path,tag}) => (
+            <S.Li key={id}>
+              <Link to={path}>{tag}</Link>
+            </S.Li>
+          ))
+        }
+      </S.Ul>
     </S.Nav>
     {/* <Outlet/> */}
     </>

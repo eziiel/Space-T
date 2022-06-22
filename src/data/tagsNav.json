@@ -1,18 +1,22 @@
 [
   {
     "id": 0,
+    "path":"/",
     "tag":"Home"
   },
   {
     "id": 1,
+    "path":"Destination",
     "tag":"Destination"
   },
   {
     "id": 2,
+    "path":"Crew",
     "tag":"Crew"
   },
   {
     "id": 3,
+    "path":"Technology",
     "tag":"Technology"
   }
 ]

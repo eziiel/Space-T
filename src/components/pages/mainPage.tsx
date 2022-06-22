@@ -2,11 +2,11 @@ import React from "react"
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import { Global } from "../../styled/global"
 import NavMain from "../utils/navigation"
-import Crow from "./crow"
+import Crew from "./crew"
 import Destination from "./destination"
 import Home from "./home"
 import * as S from "./styledMainPage"
-import Techlology from "./technology"
+import Technology from "./technology"
 
 
 const MainPage: React.FC = () => {
@@ -21,8 +21,8 @@ const MainPage: React.FC = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="destination" element={<Destination />} />
-          <Route path="crow" element={<Crow />} />
-          <Route path="technology" element={<Techlology />} />
+          <Route path="crew" element={<Crew />} />
+          <Route path="technology" element={<Technology />} />
         </Routes>
       </BrowserRouter>
     </S.Container>

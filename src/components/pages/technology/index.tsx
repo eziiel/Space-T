@@ -1,7 +1,7 @@
 import React from "react";
 
 
-const Techlology:React.FC = () => {
+const Technology:React.FC = () => {
 
 
   return (
@@ -10,4 +10,4 @@ const Techlology:React.FC = () => {
 }
 
 
-export default Techlology
+export default Technology
