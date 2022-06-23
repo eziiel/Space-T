@@ -9,8 +9,6 @@ interface Props {
 
 const Btn:React.FC<Props> = ({size,children}) => {
 
-  console.log( size,children)
-
   return (
     <ExploreBtn size={size}
     >
