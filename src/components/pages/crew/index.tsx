@@ -1,10 +1,15 @@
 import React from "react";
+import * as S from "./styled"
 
-const Crow:React.FC =() => {
+const Crew:React.FC =() => {
 
   return (
-    <h1>Crew</h1>
+    <S.MainCrew>
+      <S.Title>
+        Crew
+      </S.Title>
+    </S.MainCrew>
   )
 }
 
-export default Crow
+export default Crew

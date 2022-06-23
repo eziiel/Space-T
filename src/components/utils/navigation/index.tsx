@@ -1,10 +1,13 @@
 import React from "react"
-import { NavLink } from "react-router-dom"
+import { NavLink, useParams } from "react-router-dom"
 import  * as S  from "./styled"
 import navItems from "../../../data/tagsNav.json"
 
-const NavMain:React.FC = () => {
 
+
+
+const NavMain:React.FC = () => {
+  const [PathBg, setPathBg] = React.useState(String)
 
   return (
     <>
@@ -13,13 +16,14 @@ const NavMain:React.FC = () => {
         {
           navItems.map(({id,path,tag}) => (
             <S.Li key={id}>
-              <NavLink to={path}>{tag}</NavLink>
+              <NavLink 
+              to={path}
+              >{tag}</NavLink>
             </S.Li>
           ))
         }
       </S.Ul>
     </S.Nav>
-    {/* <Outlet/> */}
     </>
 
   )

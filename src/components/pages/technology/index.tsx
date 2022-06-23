@@ -1,11 +1,16 @@
 import React from "react";
+import * as S from "./styled"
 
 
 const Technology:React.FC = () => {
 
 
   return (
-    <h1>Tech</h1>
+    <S.MainTech>
+      <S.Title>
+        Tech
+      </S.Title>
+    </S.MainTech>
   )
 }
 

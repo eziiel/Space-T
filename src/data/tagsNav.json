@@ -2,21 +2,21 @@
   {
     "id": 0,
     "path":"/",
-    "tag":"Home"
+    "tag":"home"
   },
   {
     "id": 1,
-    "path":"Destination",
-    "tag":"Destination"
+    "path":"destination",
+    "tag":"destination"
   },
   {
     "id": 2,
-    "path":"Crew",
-    "tag":"Crew"
+    "path":"crew",
+    "tag":"crew"
   },
   {
     "id": 3,
-    "path":"Technology",
-    "tag":"Technology"
+    "path":"technology",
+    "tag":"technology"
   }
 ]

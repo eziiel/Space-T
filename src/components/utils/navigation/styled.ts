@@ -5,7 +5,6 @@ const Nav = styled.nav`
   display: flex;
   justify-content: end;
   margin: 2rem 0;
-  backdrop-filter: blur(100px);
   position: relative;
   
   :before {
@@ -15,10 +14,12 @@ const Nav = styled.nav`
     width: 40%;
     background: #6d6d6d7f;
     top: 50%;
-    left: 10%;
+    left: 15%;
+    z-index: 1;
   }
   `
   const Ul = styled.ul`
+  backdrop-filter: blur(10px);
   display: flex;
   justify-content: center;
   padding: 2rem 0;
@@ -33,7 +34,9 @@ const Li = styled.li`
     color: var(--light2);
     padding: 1.8rem 1rem;
     border-bottom: 2px solid transparent;
-    font: var(--font-default2);
+    text-transform: uppercase;
+    font: var(--font-default);
+
     
     
     :after,:focus,:active,:enabled {

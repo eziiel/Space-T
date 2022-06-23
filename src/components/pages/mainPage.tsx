@@ -1,5 +1,5 @@
 import React from "react"
-import { BrowserRouter, Route, Routes } from "react-router-dom"
+import { BrowserRouter, Route, Routes, useParams } from "react-router-dom"
 import { Global } from "../../styled/global"
 import NavMain from "../utils/navigation"
 import Crew from "./crew"
@@ -11,7 +11,6 @@ import Technology from "./technology"
 
 
 const MainPage: React.FC = () => {
-
 
 
   return (
