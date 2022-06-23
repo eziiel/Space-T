@@ -4,6 +4,7 @@ interface Props {
   size: string;
   children: string;
 }
+
 const ExploreBtn = styled.button<Props>`
   width: ${props => props.size};
   height: ${props => props.size};

@@ -1,25 +1,25 @@
 import React from "react";
-import { Link, NavLink, Outlet, Route, Routes } from "react-router-dom";
-import Europa from "../europa";
-import Mars from "../mars";
-import Moon from "../moon";
-import Titan from "../titan";
-
-
+import { NavLink } from "react-router-dom";
+import * as S from "./styled"
+import navItems from "../destinationJson/destination.json"
 const NavDestination:React.FC = () => {
 
 
   return (
-    <>
-      <div>
-         <NavLink to="0">Europa</NavLink> 
-         <NavLink to="1" >Mars</NavLink> 
-         <NavLink to="2" >Moon</NavLink> 
-         <NavLink to="3" >Titan</NavLink> 
-      </div>
-      {/* <Outlet/> */}
-      {/* <h1>aa</h1> */}
-    </>
+      <S.NavDestination>
+        <S.Title>
+          pick your destination
+        </S.Title>
+        <S.Ul>
+          {
+            navItems.map((item) => (
+              <S.Li key={item.id}>
+                  <NavLink to={String(item.id)}>{item.dest}</NavLink>
+              </S.Li>
+            ))
+          }
+        </S.Ul>
+      </S.NavDestination>
   )
 }
 
