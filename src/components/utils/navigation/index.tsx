@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 import  * as S  from "./styled"
 import navItems from "../../../data/tagsNav.json"
 
@@ -13,7 +13,7 @@ const NavMain:React.FC = () => {
         {
           navItems.map(({id,path,tag}) => (
             <S.Li key={id}>
-              <Link to={path}>{tag}</Link>
+              <NavLink to={path}>{tag}</NavLink>
             </S.Li>
           ))
         }
