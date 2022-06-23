@@ -28,10 +28,9 @@ const Nav = styled.nav`
 
 const Li = styled.li`
   height: 100%;
-  /* width: ; */
   
   a{
-    color: #e2e2e2;
+    color: var(--light2);
     padding: 1.8rem 1rem;
     border-bottom: 2px solid transparent;
     font: var(--font-default2);
