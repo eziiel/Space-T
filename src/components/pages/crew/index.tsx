@@ -6,8 +6,18 @@ const Crew:React.FC =() => {
   return (
     <S.MainCrew>
       <S.Title>
-        Crew
+        Meet your crew
       </S.Title>
+
+      <S.Container>
+
+
+      </S.Container>
+
+      <div>
+        
+      </div>
+
     </S.MainCrew>
   )
 }

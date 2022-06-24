@@ -22,13 +22,7 @@ const MainDest = styled.div`
   }
 
 `
-const Title = styled.h1`
-  text-transform: uppercase;
-
-`
 
 export {
   MainDest,
-  Title,
-
 }
