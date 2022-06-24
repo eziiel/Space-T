@@ -7,9 +7,10 @@ const NavDestination = styled.nav`
 `
 const Title = styled.h1`
   width: 50%;
-  text-align: start;
+  font: var(--font-default3);
+  letter-spacing: 3px;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  color: var(--light);
 `
 
 const Ul = styled.ul`

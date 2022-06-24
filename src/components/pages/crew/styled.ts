@@ -22,12 +22,19 @@ const MainCrew = styled.div`
   }
 
 `
-
 const Title = styled.h1`
+  font: var(--font-default3);
+  letter-spacing: 3px;
   text-transform: uppercase;
+  color: var(--light);
+`
+const Container = styled.section`
 
 `
+
 export {
   MainCrew,
   Title,
+  Container,
+  
 }
