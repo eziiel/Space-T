@@ -7,10 +7,10 @@ const NavDestination = styled.nav`
 `
 const Title = styled.h1`
   width: 50%;
-  font: var(--font-default3);
+  font: var(--font-default);
   letter-spacing: 3px;
   text-transform: uppercase;
-  color: var(--light);
+  color: var(--light2);
 `
 
 const Ul = styled.ul`
@@ -34,6 +34,9 @@ const Li = styled.li`
     :after,:focus,:active,:enabled {
       border-bottom: 3px solid #e2e2e2;
     }
+  }
+  a.active{
+    border-bottom: 3px solid #e2e2e2;
   }
 
 `

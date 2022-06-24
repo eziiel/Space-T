@@ -12,16 +12,15 @@ const Place = styled.main`
   display: grid;
   grid-template-columns: repeat(2,1fr);
   opacity: 0;
+  gap: 3rem;
   transform: translateX(-50px);
   animation: .8s ToRight forwards;
-  gap: 3rem;
   @keyframes ToRight {
     to {
       transform: initial;
       opacity: initial;
     }
   }
-
 `
 const ImgPlace = styled.div<Props>`
   background: transparent url(${props => props.img}) left no-repeat;
@@ -65,6 +64,7 @@ const FirstInfoOthers = styled.span`
 `
 const SecInfoOthers = styled.span`
   font: var(--font-default);
+  color: var(--light2);
   text-transform: uppercase;
   margin-top: .5rem;
   letter-spacing: 1.5px;

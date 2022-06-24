@@ -43,6 +43,9 @@ const Li = styled.li`
       border-bottom: 3px solid #e2e2e2;
     }
   }
+  a.active{
+    border-bottom: 3px solid #e2e2e2;
+ }
 `
 
 export {

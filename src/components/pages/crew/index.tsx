@@ -1,22 +1,34 @@
 import React from "react";
+import { Route, Routes, useParams } from "react-router-dom";
+import NavCrew from "./navCrew";
+import PlaceCrew from "./placeCrew";
 import * as S from "./styled"
+import crew from "../../../data/index.json"
 
 const Crew:React.FC =() => {
+  const [id, setId] = React.useState(Number)
+
+  const place = useParams()
+
+  React.useEffect(()=>{
+    for (var i in place) {
+      let a = Number(place[i]) 
+     setId(a)
+    }
+  },[useParams()])
 
   return (
     <S.MainCrew>
-      <S.Title>
+      <S.TitlePage>
         Meet your crew
-      </S.Title>
+      </S.TitlePage>
 
-      <S.Container>
+      <Routes>
+        <Route path="/" element={<PlaceCrew id={0}/>}/>
+        <Route path={String(id)} element={<PlaceCrew id={id}/>}/>
+      </Routes>
 
-
-      </S.Container>
-
-      <div>
-        
-      </div>
+     <NavCrew></NavCrew>
 
     </S.MainCrew>
   )

@@ -6,7 +6,7 @@ interface ID {
   id:number
 }
 
-const Place:React.FC<ID> = ({id}) => {
+const PlaceDestination:React.FC<ID> = ({id}) => {
   
   interface Images {
     png:string
@@ -47,4 +47,4 @@ const Place:React.FC<ID> = ({id}) => {
 }
 
 
-export default Place
+export default PlaceDestination
