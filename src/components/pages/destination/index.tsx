@@ -1,5 +1,5 @@
 import React from "react"
-import { BrowserRouter, Link, NavLink, Outlet, Route, Routes, useParams } from "react-router-dom"
+import {  Route, Routes, useParams } from "react-router-dom"
 import NavDestination from "./navDestination"
 import Place from "./place"
 import * as S from "./styled"
@@ -23,6 +23,7 @@ const Destination:React.FC =() => {
      setId(a)
     }
   },[useParams()])
+
 
   return(
     <S.MainDest>

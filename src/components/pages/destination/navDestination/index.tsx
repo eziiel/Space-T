@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import * as S from "./styled"
-import navItems from "../destinationJson/destination.json"
+import data from "../../../../data/index.json"
 const NavDestination:React.FC = () => {
 
 
@@ -10,11 +10,12 @@ const NavDestination:React.FC = () => {
         <S.Title>
           pick your destination
         </S.Title>
+      
         <S.Ul>
           {
-            navItems.map((item) => (
-              <S.Li key={item.id}>
-                  <NavLink to={String(item.id)}>{item.dest}</NavLink>
+            data.destinations.map(({id,name}) => (
+              <S.Li key={id}>
+                  <NavLink to={String(id)}>{name}</NavLink>
               </S.Li>
             ))
           }

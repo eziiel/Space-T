@@ -10,7 +10,7 @@ const THome = styled.h1`
   display: flex;
   flex-direction: column;
 `
-const SubTitle = styled.h1`
+const SubTitle = styled.span`
   font: var(--font-default3);
   letter-spacing: 3px;
   text-transform: uppercase;
