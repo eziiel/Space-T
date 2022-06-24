@@ -1,7 +1,7 @@
 import React from "react"
 import {  Route, Routes, useParams } from "react-router-dom"
 import NavDestination from "./navDestination"
-import Place from "./place"
+import Place from "./placeDestination"
 import * as S from "./styled"
 
 interface Data {

@@ -24,7 +24,7 @@ const SpaceSpan = styled.span`
 
 const P = styled.p`
   font: var(--font-strong2);
-  color: var(--light);
+  color: var(--light2);
   letter-spacing: .5px;
   max-width: 45ch;
 `

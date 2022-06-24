@@ -8,7 +8,7 @@ const Main = styled.main`
   position: relative; 
   height: 100%;
   gap: 3rem;
-  margin: ${pixelsToRem(250)} auto 0 auto;
+  margin: ${pixelsToRem(150)} auto 0 auto;
   width: 1000px;
   display: grid;
   grid-template-columns: repeat(2,1fr);
