@@ -1,5 +1,5 @@
 import React from "react";
-import data from "../destinationJson/destination.json"
+import data from "../../../../data/index.json"
 import * as S from "./styled"
 
 interface ID {
@@ -7,32 +7,38 @@ interface ID {
 }
 
 const Place:React.FC<ID> = ({id}) => {
+  
+  interface Images {
+    png:string
+    webp:string
+  }
 
   interface Data 
   {
-    id?:number
-    dest?:string
-    info?:string
-    distance?:string
-    mounths?:string
-    src?:string
+    id:number
+    name:string
+    images:Images
+    description:string
+    distance:string
+    travel:string
   }
-  const destination:Data = data[id]
+
+  const destination:Data[] = data.destinations.filter(item => item.id == id)
 
   return (
     <S.Place>
-      <S.ImgPlace img={String(destination.src)}></S.ImgPlace>
+      <S.ImgPlace img={String(destination[0].images?.png)}></S.ImgPlace>
       <S.InfoGeralPlace>
-          <S.NamePlace>{destination.dest}</S.NamePlace>
-          <S.InfoPlace>{destination.info}</S.InfoPlace>
+          <S.NamePlace>{destination[0].name}</S.NamePlace>
+          <S.InfoPlace>{destination[0].description}</S.InfoPlace>
           <S.DataPlace>
             <S.InfoOthers>
               <S.FirstInfoOthers>AVG. Distance</S.FirstInfoOthers>
-              <S.SecInfoOthers>{destination.distance}</S.SecInfoOthers>  
+              <S.SecInfoOthers>{destination[0].distance}</S.SecInfoOthers>  
             </S.InfoOthers>
             <S.InfoOthers>
               <S.FirstInfoOthers>Est. Travel Time</S.FirstInfoOthers>
-              <S.SecInfoOthers>{destination.mounths}</S.SecInfoOthers> 
+              <S.SecInfoOthers>{destination[0].travel}</S.SecInfoOthers> 
             </S.InfoOthers>
           </S.DataPlace>
       </S.InfoGeralPlace>

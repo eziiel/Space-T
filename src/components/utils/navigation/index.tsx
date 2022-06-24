@@ -1,24 +1,24 @@
 import React from "react"
-import { NavLink, useParams } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 import  * as S  from "./styled"
-import navItems from "../../../data/tagsNav.json"
+import data from "../../../data/index.json"
 
 
 
 
 const NavMain:React.FC = () => {
-  const [PathBg, setPathBg] = React.useState(String)
+  // const [PathBg, setPathBg] = React.useState(String)
 
   return (
     <>
     <S.Nav>
       <S.Ul>
         {
-          navItems.map(({id,path,tag}) => (
-            <S.Li key={id}>
+          data.nav.map(({path,name}) => (
+            <S.Li key={name}>
               <NavLink 
               to={path}
-              >{tag}</NavLink>
+              >{name}</NavLink>
             </S.Li>
           ))
         }
