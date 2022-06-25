@@ -8,8 +8,6 @@ interface ID {
 const PlaceCrew:React.FC<ID> =({id}) => {
   
 
-console.log(dataCrew.crew[id])
-
   return (
     <S.Container>
         
