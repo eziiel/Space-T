@@ -3,7 +3,6 @@ import { Route, Routes, useParams } from "react-router-dom";
 import NavCrew from "./navCrew";
 import PlaceCrew from "./placeCrew";
 import * as S from "./styled"
-import crew from "../../../data/index.json"
 
 const Crew:React.FC =() => {
   const [id, setId] = React.useState(Number)

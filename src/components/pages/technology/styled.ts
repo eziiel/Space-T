@@ -13,6 +13,8 @@ const MainTech = styled.div`
   opacity: 0;
   transform: translateX(-40px);
   animation: .5s ToRight forwards;
+  height: 60%;
+  position: relative;
 
   @keyframes ToRight {
     to {
@@ -22,10 +24,24 @@ const MainTech = styled.div`
   }
 `
 const Title = styled.h1`
+  font: var(--font-default);
+  letter-spacing: 3px;
   text-transform: uppercase;
+  color: var(--light2);
+`
+const Container = styled.main`
+  display: flex;
+  margin: 5rem 0;
+  gap: 2rem;
+  height: 100%;
 
 `
+
+
 export {
   MainTech,
   Title,  
+  Container,
+
+
 }

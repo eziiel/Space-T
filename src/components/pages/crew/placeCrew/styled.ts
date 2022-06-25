@@ -53,7 +53,7 @@ const Bio = styled.p`
 `
 
 const ImgCrew = styled.div<Props>`
-  height: 137.6%;
+  height: 138.3%;
   width: 100%;
   background: transparent url(${props => props.img}) bottom no-repeat;
   background-size: contain;

@@ -34,15 +34,18 @@ function pixelsToRem(...values:Array<number>) {
       --light: #a0a0a0; 
       --light1: #e2e2e2; 
       --light2: #f0f1f1; 
+      --dark: #333; 
 
     //fonts
     --font-small: 500 ${pixelsToRem(10)} 'Titillium Web', sans-serif;
+    --font-small1: 500 ${pixelsToRem(16)} 'Titillium Web', sans-serif;
     --font-default2: 500 ${pixelsToRem(24)} 'Titillium Web', sans-serif;
     --font-default: 600 ${pixelsToRem(16)} 'Titillium Web', sans-serif;
     --font-default0: 600 ${pixelsToRem(40)} 'Titillium Web', sans-serif;
     --font-default1: 600 ${pixelsToRem(14)} 'Titillium Web', sans-serif;
     --font-default3: 600 ${pixelsToRem(24)} 'Titillium Web', sans-serif;
     --font-default4: 600 ${pixelsToRem(48)} 'Titillium Web', sans-serif;
+    --font-strong0: 700 ${pixelsToRem(24)} 'Titillium Web', sans-serif;
     --font-strong: 700 ${pixelsToRem(70)} 'Titillium Web', sans-serif;
     --font-strong1: 700 ${pixelsToRem(126)} 'Titillium Web', sans-serif;
     /* --font-title: ; */
