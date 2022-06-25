@@ -41,9 +41,13 @@ const NamePlace = styled.span`
   padding-bottom:1rem;
   `
 const InfoPlace = styled.p`
-  height: 140px;
-  margin-bottom: 1rem;
+  height: 200px;
   border-bottom: 1px solid var(--light);
+  max-width: 45ch;
+  color: var(--light2);
+  line-height: 1.8;
+  letter-spacing: 1px;
+  padding-bottom: 1rem;
 `
 const DataPlace = styled.div`
   display: flex;
