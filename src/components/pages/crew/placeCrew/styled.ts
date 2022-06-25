@@ -46,10 +46,11 @@ const Name = styled.span`
 `
 
 const Bio = styled.p`
-  max-width: 45ch;
   color: var(--light2);
   line-height: 1.8;
-  letter-spacing: .5px;
+  letter-spacing: 1px;
+  padding-bottom: 1rem;
+
 `
 
 const ImgCrew = styled.div<Props>`

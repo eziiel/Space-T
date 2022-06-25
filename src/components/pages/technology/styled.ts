@@ -34,7 +34,6 @@ const Container = styled.main`
   margin: 5rem 0;
   gap: 2rem;
   height: 100%;
-
 `
 
 

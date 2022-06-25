@@ -1,15 +1,26 @@
 import { NavLink } from "react-router-dom"
+import data from "../../../../data/index.json"
 import * as S from "./styled"
+
+
 const NavCrew:React.FC =() => {
 
 
-  return (
-    <S.NavCrew>
-      <NavLink to="0"><span/></NavLink>
-      <NavLink to="1"><span/></NavLink>
-      <NavLink to="2"><span/></NavLink>
-      <NavLink to="3"><span/></NavLink>
 
+
+  return (
+
+
+    <S.NavCrew>
+      <ul>
+        {
+          data.crew.map(({path}) =>(
+            <li key={path}>
+              <NavLink to={path}></NavLink>
+            </li>
+          ))
+        }
+      </ul>
     </S.NavCrew>
   )
 }
