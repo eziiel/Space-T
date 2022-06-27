@@ -7,6 +7,7 @@ interface Props {
 
 const Container = styled.section`
   display: flex;
+  flex: 1;
   margin-left: 15%;
   gap: 4rem;
 
@@ -39,7 +40,7 @@ const InfoTech = styled.div`
       margin-bottom: 2rem;
   }
   p{
-    max-width: 50ch;
+    max-width: 90ch;
     letter-spacing: 1px;
     height: 144px;
   }
@@ -50,9 +51,8 @@ const ImgTech = styled.div<Props>`
   height: 100%;
   background: transparent url(${props => props.img}) right no-repeat;
   background-size: contain;
-  position: absolute;
-  right: -26.8%;
-  top: 10%;
+  text-align: center;
+  align-self: center;
 
   opacity: 0;
   transform: translateX(-100px);

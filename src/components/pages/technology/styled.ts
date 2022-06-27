@@ -6,7 +6,7 @@ function pixelsToRem(...values:Array<number>) {
 
 
 const MainTech = styled.div`
-  width: 1000px;
+  width: 1500px;
   margin: ${pixelsToRem(50)} auto 0 auto;
   display: flex;
   flex-direction: column;
