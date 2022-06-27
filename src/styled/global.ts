@@ -1,7 +1,7 @@
 import React from "react"
 import { createGlobalStyle } from "styled-components"
 import BgHome from "../images/home/background-home-desktop.jpg"
-import BgP from "../../assets/images/crew/background-crew-desktop.jpg" 
+import BgP from "/home/background-home-desktop.jpg" 
 
 
 interface Props {
