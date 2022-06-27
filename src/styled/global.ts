@@ -1,6 +1,8 @@
 import React from "react"
 import { createGlobalStyle } from "styled-components"
 import BgHome from "../images/home/background-home-desktop.jpg"
+import BgP from "../../assets/images/crew/background-crew-desktop.jpg" 
+
 
 interface Props {
   img?:string
@@ -52,6 +54,7 @@ const Global =  createGlobalStyle<Props>`
     color: #fff;
     height: 100vh;
     background: transparent url(${props => props.img || BgHome});
+    /* background: transparent url(${BgP}); */
     
     background-position: center;
     background-repeat: no-repeat;

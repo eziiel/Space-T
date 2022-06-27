@@ -24,7 +24,7 @@ const NavMain:React.FC = () => {
   return (
     <S.Nav>
       {
-        pathBg && <Global img={`/src/images/${pathBg}/background-${pathBg}-desktop.jpg`}/>
+        pathBg && <Global img={`/assets/images/${pathBg}/background-${pathBg}-desktop.jpg`}/>
       }
       <S.Ul>
         {
