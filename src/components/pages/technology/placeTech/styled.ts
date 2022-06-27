@@ -40,11 +40,8 @@ const InfoTech = styled.div`
   }
   p{
     max-width: 50ch;
-    height: 170px;
-    color: var(--light2);
-    line-height: 1.8;
     letter-spacing: 1px;
-    padding-bottom: 1rem;
+    height: 144px;
   }
 
 `

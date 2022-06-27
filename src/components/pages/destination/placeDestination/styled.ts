@@ -32,6 +32,15 @@ const InfoGeralPlace = styled.div`
   display: flex;
   flex-direction: column;
   margin: 2rem;
+
+  transform: translateX(-70px);
+  animation: .8s ToRight forwards;
+  @keyframes ToRight {
+    to {
+      transform: initial;
+      opacity: initial;
+    }
+  }
   `
 
 const NamePlace = styled.span`
@@ -48,6 +57,7 @@ const InfoPlace = styled.p`
   line-height: 1.8;
   letter-spacing: 1px;
   padding-bottom: 1rem;
+
 `
 const DataPlace = styled.div`
   display: flex;

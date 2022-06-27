@@ -9,10 +9,6 @@ const NavDestination: React.FC = () => {
 
   return (
     <S.NavDestination>
-      <S.Title>
-        pick your destination
-      </S.Title>
-
       <S.Ul>
         {
           data.destinations.map(({ id, name }) => (
