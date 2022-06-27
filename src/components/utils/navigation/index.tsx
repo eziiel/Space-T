@@ -7,7 +7,7 @@ import { Global } from "../../../styled/global"
 
 
 
-const NavMain:React.FC = () => {
+const NavMain= () => {
   const [pathBg, setPathBg] = React.useState(String)
 
  
@@ -19,12 +19,12 @@ const NavMain:React.FC = () => {
 
   },[window.location.pathname])
   
-
-
-  return (
+  const Nav=() => {
+    return (
     <S.Nav>
       {
-        pathBg && <Global img={`/src/images/${pathBg}/background-${pathBg}-desktop.jpg`}/>
+        pathBg && <Global img={`src/images/${pathBg}/background-${pathBg}-desktop.jpg`}/>
+        // pathBg && <Global img={`dist/assets/background-${pathBg}-desktop.jpg`}/>
       }
       <S.Ul>
         {
@@ -39,7 +39,15 @@ const NavMain:React.FC = () => {
         }
       </S.Ul>
     </S.Nav>
-  )
+
+    )
+
+  }
+
+  return {
+    Nav,
+    pathBg,
+  }
 }
 
 export default NavMain

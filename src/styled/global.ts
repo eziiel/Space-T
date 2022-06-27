@@ -1,10 +1,14 @@
-import React from "react"
 import { createGlobalStyle } from "styled-components"
 import BgHome from "../images/home/background-home-desktop.jpg"
+import BgCrew from "../images/home/background-crew-desktop.jpg"
+import BgThec from "../images/home/background-technology-desktop.jpg"
+import BgDest from "../images/home/background-destination-desktop.jpg"
 
 interface Props {
   img?:string
 }
+
+
 
 function pixelsToRem(...values:Array<number>) {
   return values.reduce((a, i) => (a += i / 16 + `rem `), "").trim();
@@ -51,7 +55,11 @@ const Global =  createGlobalStyle<Props>`
   body{
     color: #fff;
     height: 100vh;
-    background: transparent url(${props => props.img || BgHome});
+    /* background: transparent url(${props => props.img || BgHome}); */
+    
+    
+    background: transparent url("src/images/destination/background-destination-desktop.jpg");
+    
     
     background-position: center;
     background-repeat: no-repeat;

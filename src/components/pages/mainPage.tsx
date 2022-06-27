@@ -9,13 +9,16 @@ import * as S from "./styledMainPage"
 import Technology from "./technology"
 
 
+
 const MainPage: React.FC = () => {
+  
+  const {Nav} = NavMain()
 
   return (
     <S.Container>
       <Global />
       <BrowserRouter>
-        <NavMain />
+        <Nav/>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="destination/*" element={<Destination />}/>
