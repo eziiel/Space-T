@@ -8,10 +8,11 @@ const NavDestination = styled.nav`
 
 
 const Ul = styled.ul`
-  width: 50%;
+  width: 66%;
   display: flex;
   justify-content: center;
   align-items: end;
+  /* margin: 0 3rem; */
 
 `
 const Li = styled.li`
