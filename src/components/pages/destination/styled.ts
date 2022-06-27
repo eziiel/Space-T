@@ -20,9 +20,18 @@ const MainDest = styled.div`
       opacity: initial;
     }
   }
-
 `
+const Title = styled.h1`
+  width: 50%;
+  font: var(--font-default);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--light2);
+`
+
 
 export {
   MainDest,
+  Title,
+  
 }

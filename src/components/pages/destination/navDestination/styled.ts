@@ -5,13 +5,7 @@ const NavDestination = styled.nav`
   justify-content: end;
   height: 8rem;
 `
-const Title = styled.h1`
-  width: 50%;
-  font: var(--font-default);
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: var(--light2);
-`
+
 
 const Ul = styled.ul`
   width: 50%;
@@ -48,6 +42,4 @@ export {
   NavDestination,
   Ul,
   Li,
-  Title,
-
 }

@@ -6,17 +6,17 @@ import data from "../../../data/index.json"
 import * as S from "./styled"
 
 
-const Technology:React.FC = () => {
+const Technology: React.FC = () => {
   const [id, setId] = React.useState(Number)
 
   const place = useParams()
 
-  React.useEffect(()=>{
+  React.useEffect(() => {
     for (var i in place) {
-      let a = Number(place[i]) 
-     setId(a)
+      let a = Number(place[i])
+      setId(a)
     }
-  },[useParams()])
+  }, [useParams()])
 
 
   return (
@@ -27,15 +27,15 @@ const Technology:React.FC = () => {
 
       <S.Container>
 
-        <NavTech></NavTech>
+        <NavTech />
 
         <Routes>
-          <Route path="/" element={<PlaceTech id={0}/>}/>
-          <Route path = {String(id)} element={<PlaceTech id={id}/>} />
+          <Route path="/" element={<PlaceTech id={0} />} />
+          <Route path={String(id)} element={<PlaceTech id={id} />} />
         </Routes>
 
       </S.Container>
-    
+
     </S.MainTech>
   )
 }

@@ -4,17 +4,17 @@ import NavCrew from "./navCrew";
 import PlaceCrew from "./placeCrew";
 import * as S from "./styled"
 
-const Crew:React.FC =() => {
+const Crew: React.FC = () => {
   const [id, setId] = React.useState(Number)
 
   const place = useParams()
 
-  React.useEffect(()=>{
+  React.useEffect(() => {
     for (var i in place) {
-      let a = Number(place[i]) 
-     setId(a)
+      let a = Number(place[i])
+      setId(a)
     }
-  },[useParams()])
+  }, [useParams()])
 
   return (
     <S.MainCrew>
@@ -23,11 +23,11 @@ const Crew:React.FC =() => {
       </S.TitlePage>
 
       <Routes>
-        <Route path="/" element={<PlaceCrew id={0}/>}/>
-        <Route path={String(id)} element={<PlaceCrew id={id}/>}/>
+        <Route path="/" element={<PlaceCrew id={0} />} />
+        <Route path={String(id)} element={<PlaceCrew id={id} />} />
       </Routes>
 
-     <NavCrew></NavCrew>
+      <NavCrew></NavCrew>
 
     </S.MainCrew>
   )
