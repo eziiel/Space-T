@@ -26,7 +26,7 @@ const PlaceDestination: React.FC<ID> = ({ id }) => {
 
   return (
     <S.Place>
-      <S.ImgPlace img={String(destination[0].images?.png)}></S.ImgPlace>
+      <S.ImgPlace img={String(destination[0].images?.webp)}></S.ImgPlace>
       <S.InfoGeralPlace>
         <S.NamePlace>{destination[0].name}</S.NamePlace>
         <S.InfoPlace>{destination[0].description}</S.InfoPlace>

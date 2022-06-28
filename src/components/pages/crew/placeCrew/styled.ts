@@ -50,7 +50,7 @@ const Bio = styled.p`
   line-height: 1.8;
   letter-spacing: 1px;
   padding-bottom: 1rem;
-
+  font: var(--font-default2);
 `
 
 const ImgCrew = styled.div<Props>`

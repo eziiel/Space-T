@@ -6,7 +6,9 @@ const Nav = styled.nav`
   justify-content: end;
   margin: 2rem 0;
   position: relative;
-  
+  /* background-color: red; */
+  width: 100%;
+
   :before {
     position: absolute;
     content: "";
@@ -16,6 +18,10 @@ const Nav = styled.nav`
     top: 50%;
     left: 15%;
     z-index: 1;
+
+    @media (max-width: 1060px) {
+      width: 30%;
+    }
   }
   `
   const Ul = styled.ul`
@@ -25,7 +31,13 @@ const Nav = styled.nav`
   padding: 2rem 0;
   height: 100%;
   width: 50%;
+  
+  
+  @media (max-width: 800px) {
+    display: none;
+  }
   `
+
 
 const Li = styled.li`
   height: 100%;
@@ -36,7 +48,7 @@ const Li = styled.li`
     border-bottom: 2px solid transparent;
     text-transform: uppercase;
     font: var(--font-default);
-
+    
     
     
     :after,:focus,:active,:enabled {

@@ -21,11 +21,43 @@ const Place = styled.main`
       opacity: initial;
     }
   }
+  @media (max-width: 800px) {
+    gap: 1rem;
+}
+  @media (max-width: 750px) {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
 `
 const ImgPlace = styled.div<Props>`
-  background: transparent url(${props => props.img}) left no-repeat;
   width: 100%;
   height: 120%;
+  margin: 2rem;
+  background: transparent url(${props => props.img}) center no-repeat;
+  grid: 1;
+
+  @media (max-width: 1400px) {
+    background-size: cover;
+    width: 90%;
+    height: 98%;
+    background-position: right;
+}
+ 
+  @media (max-width: 900px) {
+    width: 300px;
+    height: 300px;
+}
+  @media (max-width: 800px) {
+    margin: 10px auto;
+    width: 250px;
+    height: 250px;
+}
+  @media (max-width: 430px) {
+    margin: 10px auto;
+    width: 150px;
+    height: 150px;
+}
 `
 
 const InfoGeralPlace = styled.div`
@@ -41,6 +73,12 @@ const InfoGeralPlace = styled.div`
       opacity: initial;
     }
   }
+  @media (max-width: 800px) {
+   margin: 1rem;
+  }
+  @media (max-width: 750px) {
+   align-items: center;
+}
   `
 
 const NamePlace = styled.span`
@@ -48,32 +86,70 @@ const NamePlace = styled.span`
   letter-spacing: 2px;
   text-transform: uppercase;
   padding-bottom:1rem;
+  
+  @media (max-width: 1400px) {
+    font-size: ${pixelsToRem(50)};
+  }
   `
 const InfoPlace = styled.p`
-  height: 200px;
+  height: ${pixelsToRem(200)};
   border-bottom: 1px solid var(--light);
   max-width: 45ch;
   color: var(--light2);
   line-height: 1.8;
   letter-spacing: 1px;
   padding-bottom: 1rem;
-
-`
+  font: var(--font-default2);
+  
+  @media (max-width: 1400px) {
+    font-size: 1rem;
+    height: ${pixelsToRem(150)};
+  }
+  @media (max-width: 900px) {
+    font-size: 1rem;
+    height: ${pixelsToRem(200)};
+  }
+  @media (max-width: 800px) {
+    font-size: 1rem;
+    height: ${pixelsToRem(220)};
+  }
+  @media (max-width: 750px) {
+    font-size: 1rem;
+    height: ${pixelsToRem(150)};
+  }
+  @media (max-width: 500px) {
+    font-size: .785rem;
+    height: ${pixelsToRem(150)};
+  }
+  `
 const DataPlace = styled.div`
   display: flex;
   justify-content: start;
   align-items: start;
   gap: 4rem;
   margin-top: 1rem;
-`
+  
+  @media (max-width: 400px) {
+    gap: 2rem;
+  }
+  `
 const InfoOthers = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-`
+
+ 
+  `
 const FirstInfoOthers = styled.span`
-  font: var(--font-small);
   text-transform: uppercase;
+  font: var(--font-small2);
+
+  @media (max-width: 1400px) {
+    font-size: 1rem;
+  }
+  @media (max-width: 800px) {
+    font-size: .7rem;
+  }
   
 `
 const SecInfoOthers = styled.span`
@@ -83,6 +159,14 @@ const SecInfoOthers = styled.span`
   margin-top: .5rem;
   letter-spacing: 1.5px;
   font-weight: bold;
+
+  @media (max-width: 1400px) {
+    font-size: 1rem;
+  }
+  @media (max-width: 400px) {
+    font-size: .875rem;
+  }
+
 `
 
 

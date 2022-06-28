@@ -7,19 +7,44 @@ function pixelsToRem(...values:Array<number>) {
 
 const MainDest = styled.div`
   width: 1500px;
-  margin: ${pixelsToRem(50)} auto 0 auto;
   display: flex;
   flex-direction: column;
   opacity: 0;
   transform: translateX(-40px);
   animation: .5s ToRight forwards;
-
+  padding: 1rem;
+  
   @keyframes ToRight {
     to {
       transform: initial;
       opacity: initial;
     }
   }
+  
+  @media (max-width: 1400px) {
+    width: 900px;
+  }
+  @media (max-width: 900px) {
+    width: 800px;
+  }
+  @media (max-width: 800px) {
+    width: 700px;
+  }
+  @media (max-width: 700px) {
+    width: 600px;
+  }
+  
+  @media (max-width: 600px) {
+    width: 500px;
+  }
+  
+  @media (max-width: 500px) {
+    width: 400px;
+  }
+  @media (max-width: 400px) {
+    width: 300px;
+  }
+  
 `
 const Title = styled.h1`
   width: 50%;

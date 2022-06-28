@@ -5,10 +5,8 @@ function pixelsToRem(...values:Array<number>) {
 }
 
 const Main = styled.main`
-  position: relative; 
   height: 100%;
   gap: 3rem;
-  margin: ${pixelsToRem(150)} auto 0 auto;
   width: 1000px;
   display: grid;
   grid-template-columns: repeat(2,1fr);
@@ -17,6 +15,9 @@ const Main = styled.main`
   opacity: 0;
   transform: translateX(-40px);
   animation: .5s ToRight forwards;
+  justify-content: end;
+  padding: 2rem;
+
 
   @keyframes ToRight {
     to {
@@ -25,6 +26,21 @@ const Main = styled.main`
     }
   }
 
+
+  @media (max-width: 1060px) {
+    width: 800px;
+  }
+
+  @media (max-width: 800px) {
+    width: 500px;
+    grid-template-columns: 1fr;
+    justify-content: start  ;
+    gap: 1rem;
+  }
+
+  @media (max-width: 500px) {
+    width: 300px;
+  }
 `
 
 export {

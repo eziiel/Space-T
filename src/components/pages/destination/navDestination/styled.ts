@@ -4,30 +4,45 @@ const NavDestination = styled.nav`
   display: flex;
   justify-content: end;
   height: 8rem;
-`
+  width: 100%;
+
+  @media (max-width: 900px) {
+    justify-content: center;
+  }
+  `
 
 
 const Ul = styled.ul`
-  width: 66%;
+  width: 46%;
   display: flex;
-  justify-content: center;
   align-items: end;
-  /* margin: 0 3rem; */
-
+  padding: 2rem;
+ 
+  @media (max-width: 900px) {
+    justify-content: center;
+  }
+ 
 `
 const Li = styled.li`
   padding: 1rem;
-
+  
+  @media (max-width: 1400px) {
+      padding: .5rem 1rem;
+  }
+  @media (max-width: 500px) {
+      padding: .5rem ;
+  }
   a{
-    font: var(--font-default1);
+    font: var(--font-small2);
     color: var(--light3);
-    padding: 1rem;
+    padding: 1rem ;
     letter-spacing: 1.5px;
     text-transform: uppercase;
     border-bottom:2px solid transparent ;
-  
-    :after,:focus,:active,:enabled {
-      border-bottom: 3px solid #e2e2e2;
+    
+    @media (max-width: 1400px) {
+      font: var(--font-small1);
+      padding: 0.5rem;
     }
   }
   a.active{

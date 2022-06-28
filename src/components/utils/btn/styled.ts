@@ -15,6 +15,22 @@ const ExploreBtn = styled.button<Props>`
   font: var(--font-default4);
   letter-spacing: 2px;
   cursor: pointer;
+
+  @media (max-width: 1060px) {
+    width: 250px;
+    height: 250px;
+  }
+  @media (max-width: 800px) {
+    justify-self: center;
+    font-size: 2rem;
+  }
+  @media (max-width: 500px) {
+    width: 200px;
+    height: 200px;
+    font-size: 2rem;
+  }
+
+
 `
 
 export {

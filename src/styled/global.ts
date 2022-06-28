@@ -36,6 +36,7 @@ const Global =  createGlobalStyle<Props>`
     //fonts
     --font-small: 500 ${pixelsToRem(10)} 'Titillium Web', sans-serif;
     --font-small1: 500 ${pixelsToRem(16)} 'Titillium Web', sans-serif;
+    --font-small2: 500 ${pixelsToRem(20)} 'Titillium Web', sans-serif;
     --font-default2: 500 ${pixelsToRem(24)} 'Titillium Web', sans-serif;
     --font-default: 600 ${pixelsToRem(16)} 'Titillium Web', sans-serif;
     --font-default0: 600 ${pixelsToRem(40)} 'Titillium Web', sans-serif;
