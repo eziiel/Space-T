@@ -13,12 +13,16 @@ const Container = styled.section`
   opacity: 0;
   transform: translateX(-40px);
   animation: .5s ToRight forwards;
-
+  
   @keyframes ToRight {
     to {
       transform: initial;
       opacity: initial;
     }
+  }
+  @media (max-width: 720px) {
+    grid-template-columns: 1fr;
+    height: 100%;
   }
 
 `
@@ -26,10 +30,15 @@ const InfoPerson = styled.div`
   display: flex;
   flex-direction: column;
   margin: 5rem 0;
+
+  @media (max-width: 720px) {
+   margin: 1rem 0 ;
+  }
 `
 const Title = styled.div`
   display: flex;
   flex-direction: column;
+  
 `
 const Role = styled.span`
   font : var(--font-default2);
@@ -37,12 +46,21 @@ const Role = styled.span`
   letter-spacing: 1.5px;
   font-weight: bold;
   color: var(--light);
+
+  @media (max-width: 720px) {
+    font: var(--font-small1);
+  }
   `
 const Name = styled.span`
   font : var(--font-default0);
   text-transform: uppercase;
   letter-spacing: 1.5px;
   margin-bottom: 2rem;
+  
+  @media (max-width: 720px) {
+    font: var(--font-default2);
+    margin-bottom: 1rem;
+  }
 `
 
 const Bio = styled.p`
@@ -51,10 +69,17 @@ const Bio = styled.p`
   letter-spacing: 1px;
   padding-bottom: 1rem;
   font: var(--font-default2);
+
+  @media (max-width: 1540px) {
+    font: var(--font-small2);
+  }
+  @media (max-width: 1030px) {
+    font: var(--font-small1);
+  }
 `
 
 const ImgCrew = styled.div<Props>`
-  height: 138.3%;
+  height: 141.3%;
   width: 100%;
   background: transparent url(${props => props.img}) bottom no-repeat;
   background-size: contain;
@@ -68,7 +93,12 @@ const ImgCrew = styled.div<Props>`
       opacity: initial;
     }
   }
-
+  @media (max-width: 720px) {
+    grid-row: 1;
+    width: 300px;
+    height: 233px;
+    justify-self: center;
+  }
 `
 export {
   Container,

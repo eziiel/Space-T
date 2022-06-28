@@ -28,6 +28,7 @@ const Main = styled.main`
 
 
   @media (max-width: 1060px) {
+    margin-top: 3rem;
     width: 800px;
   }
 

@@ -22,6 +22,7 @@ const MainDest = styled.div`
   }
   
   @media (max-width: 1400px) {
+    margin-top: 3rem;
     width: 900px;
   }
   @media (max-width: 900px) {

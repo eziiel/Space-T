@@ -9,6 +9,7 @@ import { Global } from "../../../styled/global"
 
 const NavMain:React.FC = () => {
   const [pathBg, setPathBg] = React.useState(String)
+  const [dropMenu, setDropMenu] = React.useState<boolean>(false)
 
  
   React.useEffect(()=>{
@@ -20,6 +21,9 @@ const NavMain:React.FC = () => {
   },[window.location.pathname])
   
 
+  const handleDropMenu =():void => {
+    setDropMenu(!dropMenu)
+  }
 
   return (
     <S.Nav>
@@ -38,6 +42,26 @@ const NavMain:React.FC = () => {
           ))
         }
       </S.Ul>
+      <S.MenuDrop
+        drop={dropMenu}
+        onClick={handleDropMenu}>
+        <span 
+        ></span>
+        <div >
+          <S.DropUl>
+          {
+          data.nav.map(({path,name}) => (
+            <li key={name}>
+              <NavLink 
+              onClick={() =>setPathBg(name)}
+              to={path}
+              >{name}</NavLink>
+            </li>
+          ))
+        }
+          </S.DropUl>
+        </div>
+      </S.MenuDrop>
     </S.Nav>
   )
 }

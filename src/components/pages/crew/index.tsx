@@ -27,7 +27,7 @@ const Crew: React.FC = () => {
         <Route path={String(id)} element={<PlaceCrew id={id} />} />
       </Routes>
 
-      <NavCrew></NavCrew>
+      <NavCrew/>
 
     </S.MainCrew>
   )

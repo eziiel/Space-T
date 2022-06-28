@@ -2,10 +2,17 @@ import styled from "styled-components";
 
 const NavCrew = styled.nav`
   width: 100%;
-  height: 8%;
+  height: 30px;
   position: absolute;
-  bottom: 20%;
+  bottom: 25%;
+  display: flex;
+  align-items: center;
   
+  @media (max-width: 720px) {
+    padding: .5rem;
+    bottom: -5%;
+    justify-self: center;
+  }
   ul {
     width: 100%;
     height: 100%;

@@ -1,12 +1,15 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
+interface Props {
+  drop :boolean
+}
 
 const Nav = styled.nav`
   display: flex;
   justify-content: end;
   margin: 2rem 0;
   position: relative;
-  /* background-color: red; */
+  align-items: center;
   width: 100%;
 
   :before {
@@ -21,6 +24,9 @@ const Nav = styled.nav`
 
     @media (max-width: 1060px) {
       width: 30%;
+    }
+    @media (max-width: 800px) {
+      width: 60%;
     }
   }
   `
@@ -50,7 +56,6 @@ const Li = styled.li`
     font: var(--font-default);
     
     
-    
     :after,:focus,:active,:enabled {
       border-bottom: 3px solid #e2e2e2;
     }
@@ -60,9 +65,99 @@ const Li = styled.li`
  }
 `
 
+const MenuDrop = styled.nav<Props>`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  display: none;
+  margin-right: 10%;
+  cursor: pointer;
+
+  @media (max-width: 800px) {
+    display: block;
+  }
+
+  span{
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 20px;
+    width: 40px;
+    height: 3px;
+    background-color: var(--light2);
+    border-radius: 10px;
+
+
+    :before{
+      position: absolute;
+      content: "";
+      top: 10px;
+      width: 30px;
+      height: 3px;
+      background-color: var(--light2);  
+      border-radius: 10px;
+
+    }
+    :after{
+      position: absolute;
+      content: "";
+      bottom: 10px;
+      width: 20px;
+      height: 3px;
+      background-color: var(--light2); 
+      border-radius: 10px;
+    }
+  }
+
+  div{
+    top:90%;
+    right: -20%;
+    width: 320px;
+    height: 80px;
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    border-bottom: 2px solid #6d6d6d7f;
+    transform: translateX(-40px);
+
+    ${props => props.drop==true && css`
+      display: block;
+      animation: .5s toRight forwards;
+    `}
+    
+    @keyframes toRight {
+      to {
+        opacity: initial;
+        transform:initial;
+      }
+    }
+  }
+
+  `
+const DropUl = styled.ul`
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    li{
+      padding: .5rem;
+      a{
+        font: var(--font-default);
+        color: var(--light2);
+        text-transform: uppercase;
+      }
+    }
+`
+
 export {
   Nav,
   Ul,
   Li,
+  MenuDrop,
+  DropUl,
 
 }
