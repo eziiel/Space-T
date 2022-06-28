@@ -50,12 +50,17 @@ const MainCrew = styled.div`
   @media (max-width: 500px) {
     width: 350px;
   }
+  /* @media (max-width: 400px) {
+    width: 00px;
+  } */
+
 `
 const TitlePage = styled.span`
   font: var(--font-default);
   letter-spacing: 3px;
   text-transform: uppercase;
   color: var(--light2);
+  ////////////////////////
   @media (max-width: 500px) {
     max-height: 25px;
   }
