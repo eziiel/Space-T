@@ -20,6 +20,10 @@ const Container = styled.section`
     margin: auto;
     flex-direction: column;
   }
+  @media (max-width: 950px) {
+    gap: 1rem;
+    flex-direction: column;
+  }
 `
 
 const InfoTech = styled.div`
@@ -90,6 +94,10 @@ const ImgTech = styled.div<Props>`
       width: 310px;
       height: 310px;
       background-position: center;
+  }
+  @media (max-width: 500px) {
+      width: 180px;
+      height: 180px;
   }
 `
 
