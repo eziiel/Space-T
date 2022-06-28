@@ -50,13 +50,15 @@ const Global =  createGlobalStyle<Props>`
   }
 
   body{
-    color: #fff;
+    color: var(--light2);
     height: 100vh;
     background: transparent url(${props => props.img || BgHome});
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Titillium Web', sans-serif;
+    margin: 0;
+    padding: 0;
   }
   #root{
     height: 100%;

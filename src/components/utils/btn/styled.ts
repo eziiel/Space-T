@@ -25,8 +25,8 @@ const ExploreBtn = styled.button<Props>`
     font-size: 2rem;
   }
   @media (max-width: 500px) {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     font-size: 2rem;
   }
 

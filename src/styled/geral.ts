@@ -8,6 +8,7 @@ const Main = styled.main`
   height: 100%;
   gap: 3rem;
   width: 1000px;
+  flex: 1;
   display: grid;
   grid-template-columns: repeat(2,1fr);
   align-items: center;

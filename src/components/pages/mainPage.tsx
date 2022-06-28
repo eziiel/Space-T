@@ -13,6 +13,9 @@ const MainPage: React.FC = () => {
 
   return (
     <S.Container>
+      {/* <p>a</p> */}
+      {/* <div>b</div> */}
+      {/* <Global /> */}
       <Global />
       <BrowserRouter>
         <NavMain />

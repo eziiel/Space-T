@@ -4,6 +4,7 @@ const Section = styled.section`
   display: flex;
   flex-direction: column;
   align-items:start;
+  flex: 1;
   
   @media (max-width: 800px) {
     align-items: center;
