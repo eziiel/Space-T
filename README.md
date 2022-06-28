@@ -1,8 +1,8 @@
-# Space-Turism
+# Space-Tourism
 
 <p align="center" >
 
-<!-- <img src=".github/Preload.png" alt="banner"> -->
+<img src=".github/banner.png" alt="banner">
 
 </p>
 <p align="center">
@@ -29,9 +29,9 @@ Clone the project and access the folder.
 Run this command to install the dependencies.
 
 ```bash
-git clone https://github.com/eziiel/Space-Turism.git
+git clone https://github.com/eziiel/Space-Tourism.git
 
-cd Space-Turism
+cd Space-Tourism
 
 npm install
 
@@ -44,21 +44,12 @@ You can view the project through the links below:
 
 - [Live Preview](#)
 
-<!-- - [Figma](https://www.figma.com/file/9QCh4nzuGN5wFuvdQQfnEN/Orpheus---Designer-Portfolio-(%2B-Sculpture-Avatars)-(Community)?node-id=0%3A1) -->
-
-<!-- Remembering that you need to have a [Figma](http://figma.com/) account to access it. -->
-
 ## 📝 License
 
----
+
 <br>
-  <p align="center">
-  🔧🚧project in progress🔧🚧
-  </p>
 <br>
 
-
----
 
 This project is licensed under the MIT License. See the [LICENSE](https://opensource.org/licenses/MIT) file for details.
 
