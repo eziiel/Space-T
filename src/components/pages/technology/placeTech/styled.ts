@@ -42,7 +42,7 @@ const InfoTech = styled.div`
   p{
     max-width: 90ch;
     letter-spacing: 1px;
-    height: 144px;
+    font: var(--font-default2);
   }
 
 `

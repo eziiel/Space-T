@@ -1,0 +1,8 @@
+@media :
+  1:1060px
+  2:800px
+
+
+  @media (max-width: 1060px) {
+      width: 30%;
+    }
