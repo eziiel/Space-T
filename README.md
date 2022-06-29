@@ -22,6 +22,7 @@ This project was developed using the following technologies:
 
 
 
+
 ## 🚀 Getting started
 
 Clone the project and access the folder.
