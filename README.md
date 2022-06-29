@@ -2,7 +2,7 @@
 
 <p align="center" >
 
-<img src=".github/banner.png" alt="banner">
+<!-- <img src=".github/banner.png" alt="banner"> -->
 
 </p>
 <p align="center">
