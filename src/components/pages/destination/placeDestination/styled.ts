@@ -22,11 +22,10 @@ const Place = styled.main`
     }
   }
   @media (max-width: 800px) {
-    gap: 1rem;
+    gap: .5rem;
 }
   @media (max-width: 750px) {
     grid-template-columns: 1fr;
-    gap: 1rem;
   }
 
 `
@@ -88,7 +87,8 @@ const NamePlace = styled.span`
   padding-bottom:1rem;
   
   @media (max-width: 1400px) {
-    font-size: ${pixelsToRem(50)};
+    font-size: ${pixelsToRem(40)};
+    padding-bottom:.5rem;
   }
   `
 const InfoPlace = styled.p`
@@ -119,7 +119,7 @@ const InfoPlace = styled.p`
   }
   @media (max-width: 500px) {
     font-size: .785rem;
-    height: ${pixelsToRem(150)};
+    height: ${pixelsToRem(125)};
   }
   `
 const DataPlace = styled.div`
