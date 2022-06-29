@@ -98,6 +98,8 @@ const ImgCrew = styled.div<Props>`
     width: 300px;
     height: 233px;
     justify-self: center;
+    border-bottom: 1px solid #e2e2e2;
+
   }
 `
 export {
